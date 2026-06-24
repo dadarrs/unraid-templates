@@ -30,10 +30,10 @@
   <Config Name="App URL" Target="APP_URL" Default="http://[IP]:36400" Mode="" Description="The URL of the application. Used for generating links and authentication redirects. Use 'http://[IP]:36400' for local access or your external domain." Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="App Port" Target="APP_PORT" Default="36400" Mode="" Description="The internal port the application listens on." Type="Variable" Display="always" Required="true" Mask="false">36400</Config>
   <Config Name="Enable Postgres" Target="ENABLE_POSTGRES" Default="true|false" Mode="" Description="Set to 'true' to use the embedded Postgres database, or 'false' to use an external database." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="Postgres Database" Target="PG_DATABASE" Default="m3ue" Mode="" Description="Postgres database name." Type="Variable" Display="always" Required="false" Mask="false">m3ue</Config>
-  <Config Name="Postgres User" Target="PG_USER" Default="m3ue" Mode="" Description="Postgres user name." Type="Variable" Display="always" Required="false" Mask="false">m3ue</Config>
-  <Config Name="Postgres Password" Target="PG_PASSWORD" Default="" Mode="" Description="Postgres password." Type="Variable" Display="always" Required="false" Mask="true"></Config>
-  <Config Name="Postgres Port" Target="PG_PORT" Default="5432" Mode="" Description="Postgres port." Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="Postgres Database" Target="PG_DATABASE" Default="m3ue" Mode="" Description="The name of the embedded Postgres database." Type="Variable" Display="always" Required="false" Mask="false">m3ue</Config>
+  <Config Name="Postgres User" Target="PG_USER" Default="m3ue" Mode="" Description="The username for the embedded Postgres database." Type="Variable" Display="always" Required="false" Mask="false">m3ue</Config>
+  <Config Name="Postgres Password" Target="PG_PASSWORD" Default="" Mode="" Description="The password for the embedded Postgres database." Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Postgres Port" Target="PG_PORT" Default="5432" Mode="" Description="The port the embedded Postgres server listens on." Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
   <Config Name="Database Connection" Target="DB_CONNECTION" Default="pgsql" Mode="" Description="Database driver (pgsql, sqlite, etc.)." Type="Variable" Display="always" Required="false" Mask="false">pgsql</Config>
   <Config Name="Database Host" Target="DB_HOST" Default="localhost" Mode="" Description="The hostname or IP of the database server." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="Database Port" Target="DB_PORT" Default="5432" Mode="" Description="The port of the database server." Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
@@ -42,11 +42,11 @@
   <Config Name="Database Password" Target="DB_PASSWORD" Default="" Mode="" Description="The password for the database." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="Redis Enabled" Target="REDIS_ENABLED" Default="true|false" Mode="" Description="Enable the embedded Redis server." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Redis Server Port" Target="REDIS_SERVER_PORT" Default="36790" Mode="" Description="The port the internal Redis server listens on." Type="Variable" Display="always" Required="false" Mask="false">36790</Config>
-  <Config Name="Redis Host" Target="REDIS_HOST" Default="localhost" Mode="" Description="The hostname or IP of the Redis server." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="localhost" Mode="" Description="The hostname of IP of the Redis server. Use 'localhost' for the embedded Redis." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="Password for the Redis server. Must match internal settings if using embedded Redis." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="M3U Proxy Enabled" Target="M3U_PROXY_ENABLED" Default="true|false" Mode="" Description="Enable the embedded M3U Proxy." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="M3U Proxy Port" Target="M3U_PROXY_PORT" Default="38085" Mode="" Description="The port used for the M3U Proxy." Type="Variable" Display="always" Required="false" Mask="false">38085</Config>
-  <Config Name="M3U Proxy Host" Target="M3U_PROXY_HOST" Default="localhost" Mode="" Description="The hostname or IP of the M3U Proxy server." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="M3U Proxy Host" Target="M3U_PROXY_HOST" Default="localhost" Mode="" Description="The internal network hostname or IP of the M3U Proxy. Use 'localhost' for the embedded proxy." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="M3U Proxy Token" Target="M3U_PROXY_TOKEN" Default="" Mode="" Description="A secure token for the M3U Proxy. Generate a random string (eg: openssl rand -hex 32)." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <TailscaleStateDir/>
 </Container>
