@@ -42,11 +42,11 @@
   <Config Name="Database Password" Target="DB_PASSWORD" Default="" Mode="" Description="The password for the database." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="Redis Enabled" Target="REDIS_ENABLED" Default="true|false" Mode="" Description="Enable the embedded Redis server." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Redis Server Port" Target="REDIS_SERVER_PORT" Default="36790" Mode="" Description="The port the internal Redis server listens on." Type="Variable" Display="always" Required="false" Mask="false">36790</Config>
-  <Config Name="Redis Host" Target="REDIS_HOST" Default="localhost" Mode="" Description="Hostname of IP of the Redis server. Use 'localhost' for the embedded Redis." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="localhost" Mode="" Description="The hostname of IP of the Redis server. Use 'localhost' for the embedded Redis." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="Password for the Redis server. Must match internal settings if using embedded Redis." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="M3U Proxy Enabled" Target="M3U_PROXY_ENABLED" Default="true|false" Mode="" Description="Enable the embedded M3U Proxy." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="M3U Proxy Port" Target="M3U_PROXY_PORT" Default="38085" Mode="" Description="The port used for the M3U Proxy." Type="Variable" Display="always" Required="false" Mask="false">38085</Config>
-  <Config Name="M3U Proxy Host" Target="M3U_PROXY_HOST" Default="localhost" Mode="" Description="Internal network hostname or IP of the M3U Proxy. Use 'localhost' for the embedded proxy." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="M3U Proxy Host" Target="M3U_PROXY_HOST" Default="localhost" Mode="" Description="The internal network hostname or IP of the M3U Proxy. Use 'localhost' for the embedded proxy." Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="M3U Proxy Token" Target="M3U_PROXY_TOKEN" Default="" Mode="" Description="A secure token for the M3U Proxy. Generate a random string (eg: openssl rand -hex 32)." Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <TailscaleStateDir/>
 </Container>
