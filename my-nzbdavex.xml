@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nzbdavex</Name>
+  <Repository>ghcr.io/needforseed1/nzbdavex:latest</Repository>
+  <Registry>https://ghcr.io/needforseed1/nzbdavex</Registry>
+  <Icon>https://github.com/needforseed1/nzbdavex/blob/afe2288fd3c5280934b624ab4c8dd862f7018158/frontend/public/apple-touch-icon.png?raw=true</Icon>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/needforseed1/nzbdavex/issues</Support>
+  <Project>https://github.com/needforseed1/nzbdavex</Project>
+  <ReadMe/>
+  <Overview>nzbdavex is a WebDAV proxy for NZB downloads.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:3005]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--health-cmd="curl -f http://127.0.0.1:3000/health" --health-interval=1m --health-timeout=5s --health-retries=3 --health-start-period=5s</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web Port" Target="3000" Default="3005" Mode="tcp" Description="The port used for the web interface." Type="Port" Display="always" Required="true" Mask="false">3005</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Persistent configuration data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nzbdavex/</Config>
+  <Config Name="Media" Target="/mnt" Default="" Mode="rw" Description="Path to your remote media mount." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/remote/</Config>
+  <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="User ID to run the container as. Match your Docker user." Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="1000" Mode="" Description="Group ID to run the container as. Match your Docker user." Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+</Container>
