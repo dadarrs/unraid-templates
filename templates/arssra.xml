@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>arssra</Name>
+  <Repository>ghcr.io/dadarrs/arssra:latest</Repository>
+  <Registry>https://github.com/dadarrs/arssra/pkgs/container/arssra</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/dadarrs/arssra</Support>
+  <Project>https://github.com/dadarrs/arssra</Project>
+  <Overview>arssra is a powerful, lightweight service that bridges RSS feeds to Torznab APIs.</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3232]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/dadarrs/arssra/refs/heads/main/frontend/public/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="3232" Default="3232" Mode="tcp" Description="Port for WebUI" Type="Port" Display="always" Required="true" Mask="false">3232</Config>
+  <Config Name="Config Path" Target="/app/config" Default="/mnt/user/appdata/arssra/config" Mode="rw" Description="Path for configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/arssra/config</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID for file permissions" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/London" Mode="" Description="Timezone for the container" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/London</Config>
+</Container>
