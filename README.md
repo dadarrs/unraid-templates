@@ -6,6 +6,8 @@ A collection of container templates for [Unraid](https://unraid.net).
 
 - [m3u-editor](templates/m3u-editor.xml) - A powerful tool for managing and editing M3U playlists.
   - [https://m3ue.sparkison.dev](https://m3ue.sparkison.dev/)
+- [nzbdavex](templates/nzbdavex.xml) - nzbdavex is a WebDAV proxy for NZB downloads. This version is a fork from the user Ghost which is focused on speed optimisations and other quality of life improvements.
+  - [https://github.com/needforseed1/nzbdavex](https://github.com/needforseed1/nzbdavex)
 
 ## Usage
 
