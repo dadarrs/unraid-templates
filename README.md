@@ -8,6 +8,8 @@ A collection of container templates for [Unraid](https://unraid.net).
   - [https://m3ue.sparkison.dev](https://m3ue.sparkison.dev/)
 - [nzbdavex](templates/nzbdavex.xml) - nzbdavex is a WebDAV proxy for NZB downloads. This version is a fork from the user Ghost which is focused on speed optimisations and other quality of life improvements.
   - [https://github.com/needforseed1/nzbdavex](https://github.com/needforseed1/nzbdavex)
+- [arssra](templates/arssra.xml) - arssra is a powerful, lightweight service that bridges RSS feeds to Torznab APIs.
+  - [https://github.com/dadarrs/arssra](https://github.com/dadarrs/arssra)
 
 ## Usage
 
