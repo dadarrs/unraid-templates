@@ -13,10 +13,29 @@ A collection of container templates for [Unraid](https://unraid.net).
 
 ## Usage
 
+### Community Applications (Recommended)
+
+Requires the **Community Applications** plugin. Placing templates in CA's `private` directory lets Unraid generate `my-<name>.xml` in `templates-user/` on install without creating duplicate templates.
+
+#### Using the Unraid terminal
+
+Open the Unraid web terminal and run:
+
+```bash
+mkdir -p /boot/config/plugins/community.applications/private/dadarrs && wget -qO - https://github.com/dadarrs/unraid-templates/archive/refs/heads/main.tar.gz | tar xz -C /boot/config/plugins/community.applications/private/dadarrs --strip-components=2 unraid-templates-main/templates
+```
+
+Then open the **Apps** tab, select **Private Apps** in the left sidebar, and install the template you want.
+
+#### Manual installation
+
 1. Download the XML template you want to use.
-2. Place it in `/boot/config/plugins/dockerMan/templates-user/` on your Unraid flash drive.
-3. Navigate to the **Docker** tab, scroll to the bottom, and click **"Add Container"**.
-4. Select the template's name from the **"Template"** drop-down.
+2. Place it in a subfolder under `/boot/config/plugins/community.applications/private/` on your Unraid flash drive (for example, `/boot/config/plugins/community.applications/private/dadarrs/`).
+3. Navigate to the **Apps** tab and select **Private Apps** in the left sidebar.
+4. Click **Install** on the desired application.
+
+> [!NOTE]
+> If you do not use Community Applications and place a template directly into `/boot/config/plugins/dockerMan/templates-user/`, rename it to `my-<name>.xml` on initial install (and never overwrite an existing `my-<name>.xml`, as that holds your saved container configuration). If you previously installed unprefixed XML files into `templates-user/` and already have matching `my-<name>.xml` files, remove the unprefixed copies so Unraid does not read stale defaults when editing or updating.
 
 ## License
 

@@ -3,7 +3,6 @@
   <Name>nzbdavex</Name>
   <Repository>ghcr.io/needforseed1/nzbdavex:latest</Repository>
   <Registry>https://ghcr.io/needforseed1/nzbdavex</Registry>
-  <Icon>https://github.com/needforseed1/nzbdavex/blob/afe2288fd3c5280934b624ab4c8dd862f7018158/frontend/public/apple-touch-icon.png?raw=true</Icon>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -15,11 +14,11 @@
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:3005]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/needforseed1/nzbdavex/blob/afe2288fd3c5280934b624ab4c8dd862f7018158/frontend/public/apple-touch-icon.png?raw=true</Icon>
   <ExtraParams>--health-cmd="curl -f http://127.0.0.1:3000/health" --health-interval=1m --health-timeout=5s --health-retries=3 --health-start-period=5s</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled></DateInstalled>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
   <Requires/>
